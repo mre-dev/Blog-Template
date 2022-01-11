@@ -109,6 +109,10 @@
     .container .main-content {
         margin: 3rem 1rem;
     }
+
+    .container .main-content .blog .post {
+        flex-direction: column;
+    }
 }
 
 .container .main-content .blog .post .pagination-blog {
