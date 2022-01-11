@@ -1,0 +1,8 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eee;
+    overflow-x: hidden;
+}

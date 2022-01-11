@@ -1,0 +1,206 @@
+.container .main-content .sidebar {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.container .main-content .sidebar .popular-posts-side {
+    margin: 0rem 3rem;
+    width: 100%;
+}
+
+.container .main-content .sidebar .popular-posts-side h2,
+.container .main-content .sidebar .archives-side h2,
+.container .main-content .sidebar .social-side h2,
+.container .main-content .sidebar .advertisement-side h2 {
+    font-size: 1.6rem;
+    color: #9e9e9e;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post {
+    position: relative;
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post:hover {
+    margin-left: 1rem;
+    margin-right: -1rem;
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post .popular-post-image {
+    width: 6rem;
+    height: 6rem;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post .popular-post-image img {
+    min-width: 6rem;
+    min-height: 6rem;
+    object-fit: cover;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post .popular-post-content .popular-post-title {
+    font-size: 1.6rem;
+    color: var(--black);
+    font-weight: 400;
+}
+
+.container .main-content .sidebar .popular-posts-side .popular-posts .popular-post .popular-post-desc {
+    font-size: 13px;
+    color: #a9a9a9;
+}
+
+@media only screen and (max-width: 500px) {
+    .container .main-content .sidebar .popular-posts-side {
+        margin: 0 auto;
+    }
+
+    .container .main-content .sidebar {
+        flex-direction: column !important;
+    }
+}
+
+.container .main-content .sidebar .archives-side {
+    margin: 0rem 3rem;
+    width: 100%;
+}
+
+.container .main-content .sidebar .archives-side .archive-box {
+    background: var(--white);
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.3rem;
+    border: 0px;
+    position: relative;
+    transition: 0.3s;
+    height: 4.5rem;
+}
+
+.container .main-content .sidebar .archives-side .archive-box a {
+    font-size: 1.6rem;
+    color: var(--black);
+    position: absolute;
+    transform: translate(0rem, 0rem);
+    transition: 0.3s;
+    right: unset;
+    width: fit-content;
+}
+
+.container .main-content .sidebar .archives-side .archive-box:hover a {
+    color: var(--gold);
+    position: absolute;
+    transform: translate(50%, 0rem);
+    right: 50%;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .main-content .sidebar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .main-content .sidebar .popular-posts-side {
+        width: 100%;
+    }
+
+    .container .main-content .sidebar .archives-side {
+        width: 100%;
+    }
+}
+
+.container .main-content .sidebar .social-side {
+    margin: 0rem 3rem;
+    width: 100%;
+}
+
+.container .main-content .sidebar .social-side div {
+    display: flex;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    border-radius: 0.3rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.container .main-content .sidebar .social-side div a {
+    max-width: 5rem;
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .social-side div a img {
+    border-radius: 0rem;
+    filter: blur(0rem);
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .social-side div a:hover img {
+    border-radius: 1rem;
+    filter: blur(0.1rem);
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .advertisement-side {
+    margin: 0rem 3rem;
+    width: 100%;
+}
+
+.container .main-content .sidebar .advertisement-side .my-advertisement-box {
+    border: 0.4rem double orange;
+    width: 100%;
+    height: 25rem;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    color: orange;
+    font-size: 1.6rem;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container .main-content .sidebar .advertisement-side .my-advertisement-box:hover p {
+    font-size: 2.3rem;
+    transition: 0.3s;
+}
+
+.container .main-content .sidebar .advertisement-side .my-advertisement-box p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 992px) {
+    .container .main-content .sidebar {
+        flex-direction: row;
+    }
+
+    .container .main-content .sidebar .popular-posts-side {
+        flex: 1;
+    }
+
+    .container .main-content .sidebar .archives-side {
+        flex: 1;
+    }
+}

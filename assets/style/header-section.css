@@ -1,0 +1,51 @@
+.container header section {
+    position: relative;
+}
+
+.container header section .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+}
+
+.container header section .content h2 {
+    font-size: 6rem;
+}
+
+.container header section .content p {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 945px) {
+    .container header section .content h2 {
+        font-size: 4rem;
+    }
+    
+    .container header section .content p {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .container header section .content h2 {
+        font-size: 2.8rem;
+    }
+    
+    .container header section .content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .container header section .content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .container header section .content p {
+        display: none;
+    }
+}
